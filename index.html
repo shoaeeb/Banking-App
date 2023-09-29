@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bankist Application</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="icon" href="images/logo.png" type="image/png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ruwudu&family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="nav-login">
+      <div data-id="greet" class="left-text">Log in to get started</div>
+      <div class="logo"><img src="images/logo.png" alt="bankist logo" /></div>
+      <div class="login">
+        <input data-id="user_name" type="text" placeholder="User" />
+        <input data-id="user_pin" type="password" placeholder="PIN" />
+        <div data-id="operation_submit" class="submit">→</div>
+      </div>
+    </div>
+
+    <div data-id="main-body" class="main-body">
+      <div class="balance">
+        <div class="current-balance">
+          <h4>Current Balance</h4>
+          <p data-id="currentDateTime">As of 10/08/2023,13:51</p>
+        </div>
+        <div data-id="balance" class="value">25 952,59€</div>
+      </div>
+      <div data-id="movements" class="movements">
+        <div data-id="left-box" class="left-box">
+          <div class="content">
+            <div class="info">
+              <span class="deposit">Deposit</span>
+              <span data-id="opertionDate">Date</span>
+            </div>
+            <div class="money">1300,00€</div>
+          </div>
+
+          <div class="content">
+            <div class="info">
+              <span class="deposit">Deposit</span>
+              <span>Date</span>
+            </div>
+            <div class="money">1300,00€</div>
+          </div>
+          <div class="content">
+            <div class="info">
+              <span class="deposit">Deposit</span>
+              <span>Date</span>
+            </div>
+            <div class="money">1300,00€</div>
+          </div>
+          <div class="content">
+            <div class="info">
+              <span class="withdrawal">withdrawal</span>
+              <span>Date</span>
+            </div>
+            <div class="money">1300,00€</div>
+          </div>
+          <div class="content">
+            <div class="info">
+              <span class="withdrawal">withdrawal</span>
+              <span>Date</span>
+            </div>
+            <div class="money">1300,00€</div>
+          </div>
+          <div class="content">
+            <div class="info">
+              <span class="withdrawal">withdrawal</span>
+              <span>Date</span>
+            </div>
+            <div class="money">1300,00€</div>
+          </div>
+          <div class="content">
+            <div class="info">
+              <span class="withdrawal">withdrawal</span>
+              <span>Date</span>
+            </div>
+            <div class="money">1300,00€</div>
+          </div>
+          <div class="content">
+            <div class="info">
+              <span class="withdrawal">withdrawal</span>
+              <span>Date</span>
+            </div>
+            <div class="money">1300,00€</div>
+          </div>
+          <div class="content">
+            <div class="info">
+              <span class="withdrawal">withdrawal</span>
+              <span>Date</span>
+            </div>
+            <div class="money">1300,00€</div>
+          </div>
+          <div class="content">
+            <div class="info">
+              <span class="withdrawal">withdrawal</span>
+              <span>Date</span>
+            </div>
+            <div class="money">1300,00€</div>
+          </div>
+        </div>
+        <div class="right-box">
+          <div class="action-box">
+            <h4>Transfer Money</h4>
+            <br />
+            <div class="">
+              <form action="#">
+                <div class="credentials">
+                  <input
+                    data-id="transfer-username"
+                    name="user-name"
+                    type="text"
+                  />
+                  <label for="user-name">Transfer to</label>
+                </div>
+                <div class="input-number">
+                  <input
+                    data-id="transfer-amount"
+                    type="number"
+                    name="input-number"
+                    min="50.0"
+                    max="15000.00"
+                  />
+                  <label for="amount">Amount</label>
+                </div>
+              </form>
+              <div data-id="transfer-submit" class="arrow">→</div>
+            </div>
+          </div>
+          <div class="action-box operation-loan">
+            <h4>Request loan</h4>
+            <br />
+            <div class="">
+              <form action="#">
+                <div class="credentials">
+                  <input
+                    data-id="request-amount-loan"
+                    name="user-name"
+                    type="number"
+                  />
+                  <label for="user-name">Amount</label>
+                </div>
+              </form>
+              <div data-id="request-button" class="arrow">→</div>
+            </div>
+          </div>
+          <div class="action-box operation-close">
+            <h4>Close Account</h4>
+            <br />
+            <div class="">
+              <form action="#">
+                <div class="credentials">
+                  <input
+                    data-id="close-username"
+                    name="user-name"
+                    type="text"
+                  />
+                  <label for="user-name">Confirm User</label>
+                </div>
+                <div class="input-number">
+                  <input
+                    data-id="close-userpin"
+                    type="password"
+                    name="amount"
+                  />
+                  <label for="amount">PIN</label>
+                </div>
+              </form>
+              <div data-id="close-submit" class="arrow">→</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--<div class="action"></div> -->
+      <div class="history">
+        <div class="left">
+          <div class="group-in">
+            <p>IN</p>
+            <p data-id="summary_in" class="in">27 035,20 €</p>
+          </div>
+          <div class="group-out">
+            <p>OUT</p>
+            <p data-id="summary_out" class="out">1082,61 €</p>
+          </div>
+          <div class="group-interest">
+            <p>INTEREST</p>
+            <p data-id="summary_interest" class="in">323,46 €</p>
+          </div>
+          <div data-id="sort-btn" class="operatrion-sort">
+            <p>&downarrow; SORT</p>
+          </div>
+        </div>
+        <div class="timer">
+          <p>
+            <span>You will be logout in: </span
+            ><span data-id="timer">04:59></span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script/script.js"></script>
+    <!-- <script src="script/scri.js"></script> -->
+  </body>
+</html>

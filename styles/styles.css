@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* font-family: "Ruwudu", serif;
+  font-family: "Ubuntu", sans-serif; */
+  font-family: "Poppins", sans-serif;
+  background: rgb(176, 175, 188);
+  background: linear-gradient(
+    90deg,
+    rgba(176, 175, 188, 1) 0%,
+    rgba(197, 197, 229, 1) 35%,
+    rgb(181, 195, 198) 100%
+  );
+}
+
+.nav-login {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+.left-text,
+.login {
+  padding-top: 20px;
+}
+.submit {
+  padding-top: 4px;
+  font-size: 20px;
+  cursor: ponter;
+}
+.left-text {
+  padding-top: 23px;
+  cursor: pointer;
+}
+.logo img {
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+.login {
+  display: flex;
+  gap: 20px;
+}
+.login input {
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(159, 157, 157, 0.664);
+  text-align: center;
+  font-size: 10px;
+}
+.login input:focus {
+  outline: none;
+}
+.main-body {
+  width: 80%;
+  margin: 50px auto;
+  background-color: transparent;
+  opacity: 0;
+  max-height: 500px;
+  transition: all 1s;
+}
+
+.balance {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.value {
+  font-size: 30px;
+}
+.current-balance h4 {
+  font-size: 25px;
+}
+.current-balance p {
+  padding-top: 5px;
+}
+
+/* <div class="content">
+<div class="performed">
+  <span>deposit</span>
+  <span>date</span>
+</div>
+<span>1300,00</span>
+</div> */
+.operatrion-sort {
+  cursor: pointer;
+}
+.movements {
+  max-height: 500px;
+  background-color: white;
+  height: 500px;
+  border-top-left-radius: 1%;
+}
+.left-box {
+  width: 65%;
+  float: left;
+  height: auto;
+  max-height: 500px;
+  overflow-y: scroll;
+  cursor: pointer;
+}
+.right-box {
+  width: 35%;
+  height: auto;
+  float: right;
+}
+
+.content {
+  width: 99%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  height: 60px;
+  align-items: center;
+  background-color: white;
+  border-bottom: 1px solid lightgrey;
+}
+.info {
+  width: 50%;
+  display: flex;
+  font-size: 12px;
+  margin-left: 20px;
+}
+span {
+  margin-right: 50px;
+  padding: 5px;
+}
+
+.money {
+  margin-right: 10px;
+}
+
+.deposit,
+.withdrawal {
+  padding: 6px;
+  color: white;
+  border-radius: 25px;
+  display: inline-block;
+}
+
+.deposit {
+  background-image: linear-gradient(to top left, #39b385, #9be15d);
+}
+.withdrawal {
+  background-image: linear-gradient(to top left, #e52a5a, #ff585f);
+}
+
+.action-box {
+  padding: 14px;
+  width: 90%;
+  margin: 5px auto;
+  height: 150px;
+  background-image: linear-gradient(to top left, #ffb003, #ffcb03);
+  border-radius: 25px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+}
+.credentials,
+.input-number,
+.arrow {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.credentials input,
+.input-number input {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.credentials input::focus,
+.input-number input::focus {
+  outline: none;
+}
+
+.operation-loan {
+  background-image: linear-gradient(to top left, #39b385, #9be15d);
+}
+
+.operation-close {
+  background-image: linear-gradient(to top left, #e52a5a, #ff585f);
+}
+
+.history {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  align-items: center;
+}
+.history > .left {
+  display: flex;
+  justify-content: space-between;
+  width: 645px;
+  align-items: center;
+}
+
+.history div > p {
+  display: inline;
+}
+
+.in,
+.out {
+  color: green;
+  font-size: 25px;
+}
+.out {
+  color: red;
+}
+
+.hidden {
+  display: none;
+}

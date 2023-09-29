@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bankist Sign Up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ruwudu&family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/logo.png" type="image/png" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background: rgb(176, 175, 188);
+        background: linear-gradient(
+          90deg,
+          rgba(176, 175, 188, 1) 0%,
+          rgba(197, 197, 229, 1) 35%,
+          rgba(123, 137, 140, 1) 100%
+        );
+        font-family: "Ruwudu", serif;
+        font-family: "Ubuntu", sans-serif;
+      }
+      .main-container {
+        height: 100vh;
+        width: 70vw;
+        margin: 60px auto;
+        background-color: white;
+      }
+      .left-box {
+        cursor: pointer;
+        margin: 10px 0 10px 5px;
+        height: 95%;
+        width: 40%;
+        float: left;
+        background: linear-gradient(
+          -90deg,
+          rgb(122, 48, 241) 19%,
+          rgb(133, 44, 228) 100%
+        );
+        color: white;
+      }
+
+      .top-text {
+        padding: 20px;
+        font-size: 15px;
+      }
+      .right-box {
+        height: 95%;
+        width: 55%;
+        float: right;
+        margin: 10px 5px 10px 0;
+        background-image: url("https://thefinanser.com/_next/image?url=https%3A%2F%2Ffinansernextjs.wpengine.com%2Fwp-content%2Fuploads%2F2021%2F09%2Fbank.jpeg&w=2048&q=100");
+        background-size: 20em;
+        background-position: right top;
+        background-repeat: no-repeat;
+      }
+      .middle-text {
+        width: 70%;
+        margin: 50px auto 10px;
+        text-align: left;
+        padding: 14px;
+      }
+      .middle-text h2 {
+        margin-bottom: 20px;
+        font-size: 30px;
+      }
+      .middle-text p {
+        font-size: 15px;
+      }
+      .appreciation {
+        width: 90%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        background-color: rgba(87, 32, 190, 0.9);
+        padding: 20px;
+      }
+
+      .right-box h3,
+      p {
+        padding: 20px;
+        height: 20px;
+      }
+
+      input[type="submit"] {
+        background-color: rgba(87, 32, 190, 0.9);
+        padding: 6px;
+        color: white;
+        text-align: center;
+        border: none;
+        cursor: pointer;
+        height: 28px;
+        width: 150px;
+      }
+      .form {
+        display: flex;
+        justify-content: center;
+        width: 35vw;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 5px;
+        height: 82%;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 35vw;
+        gap: 5px;
+      }
+      form input {
+        width: 150px;
+      }
+      .bottom {
+        display: flex;
+        flex-direction: column;
+      }
+
+      input:focus {
+        outline: none;
+        color: grey;
+      }
+
+      @media only screen and (max-width: 1100px) {
+        .main-container {
+          height: auto;
+        }
+        .left-box {
+          display: none;
+        }
+        .main-container {
+          height: 100vh;
+        }
+        .right-box {
+          height: 100vh;
+          width: 100%;
+          /* margin: 40px 20px; */
+          background-image: url("https://thefinanser.com/_next/image?url=https%3A%2F%2Ffinansernextjs.wpengine.com%2Fwp-content%2Fuploads%2F2021%2F09%2Fbank.jpeg&w=2048&q=100");
+          background-size: 20em;
+          background-position: right top;
+          background-repeat: no-repeat;
+          margin: 0;
+        }
+        form {
+          padding: 50px;
+          height: 100%;
+        }
+        input[type="submit"] {
+          height: 40px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="left-box">
+        <div class="top-text">BANKIST</div>
+        <div class="middle-text">
+          <h2>Start your <br />journey with us.</h2>
+          <p>
+            <!-- Discover the world's best community of freelancers and business
+            owners. -->
+            The better we know you, the more we can do.
+          </p>
+        </div>
+        <div class="appreciation">
+          As a first time customer we were greeted with friendly and smiling
+          faces. Bankist took care of our banking needs in a very professional
+          manner and followed up with a thank-you note for bringing our business
+          to their bank. We look forward to our next visit.
+          <p style="visibility: hidden">Annie</p>
+          <div>~Benkly,Annie</div>
+        </div>
+      </div>
+      <div class="right-box">
+        <h3>Sign Up</h3>
+        <p>Have an account? <a href="#">Log In</a></p>
+        <br />
+        <div class="form">
+          <form action="">
+            <label for="firstname">FirstName: </label>
+            <input type="text" name="firstname" />
+            <br />
+            <label for="lastname">LastName: </label>
+            <input type="text" name="lastname" />
+            <br />
+            <label for="email">Email: </label>
+            <input type="email" name="email" />
+            <br />
+            <label for="pin">Pin (eg. 9999): </label>
+            <input type="password" name="pin" />
+            <br />
+            <label for="number">Enter the amount of money you have: </label>
+            <input type="number" name="number" />
+            <br />
+            <input type="submit" value="Create Account" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
